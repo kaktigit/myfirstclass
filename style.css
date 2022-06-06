@@ -1,0 +1,33 @@
+body{
+       font-size: 1.6rem;
+}
+.grid-container{
+    display:grid;
+    grid-template-areas:
+
+    'header'
+    'main'
+    'footer'
+    ;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 6rem 1fr 6rem;
+    height: 100%;
+}
+
+header{
+    grid-area: header;
+    background-color: aqua;
+    padding: 2rem;
+}
+
+main{
+    grid-area: main;
+    background-color: brown;
+    padding: 14rem;
+}
+
+footer{
+    grid-area: footer;
+    background-color: blueviolet;
+}
